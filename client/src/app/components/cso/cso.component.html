@@ -1,79 +1,77 @@
+<!--start of main div -->
 <div class="main">
-<div class="container-fluid">
-  <div class="row pad">
-    <div class="col-sm-2 align">
-      <img src="http://www.niit-tech.com/niit_technologies_logo.jpg" alt="logo" class="logo">
+  <div class="container-fluid">
+    <!-- start of heading -->
+    <div class="row pad">
+      <div class="col-sm-2 align">
+        <img src="http://www.niit-tech.com/niit_technologies_logo.jpg" alt="logo" class="logo">
+      </div>
+      <div class="col-sm-8 text-center">
+        <h2><strong>IR 71 Access Request Form</strong></h2>
+      </div>
+      <div class="col-sm-2">
+        <h4 class="text-center">Ver 1.0</h4>
+      </div>
     </div>
-    <div class="col-sm-8 text-center">
-      <h2><strong>IR 71 Access Request Form</strong></h2>
-    </div>
-    <div class="col-sm-2">
-      <h4 class="text-center">Ver 1.0</h4>
+    <hr>
+  </div>
+  <!-- end of heading -->
+  <!-- start of modal window of guideline -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <a (click)="openModalWithClass(template)"><h6 class="acolor">Click Here To See Guidelines</h6></a>
+      </div>
     </div>
   </div>
-  <hr>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <a (click)="openModalWithClass(template)"><h6 class="acolor">Click Here To See Guidelines</h6></a>
-    </div>
-  </div>
-</div>
-<div class="container">
+  <!-- end of modal window of guideline -->
+  <!-- start of the whole parent div containing whole form -->
+  <div class="container">
     <div class="row color rounded bg-info text-white">
       <h5>General (All Fields Are Mandatory)</h5>
     </div>
-    <!--First Row starts here-->
     <div class="row border mt-1">
       <div class="col-sm-12 border py-3">
-      <div class="row">
-            <div class="col-sm-5">
+        <div class="row">
+          <div class="col-sm-5">
             <h6><strong>Category:</strong></h6>
           </div>
           <div class="col-sm-7">
             <input class="form-control bg-white" type="text" name="newname" value="Employee" readonly>
           </div>
-          </div>
-          </div>
+        </div>
       </div>
-      <!-- first row end here -->
-      <!-- second row start here -->
-      <div class="row border mt-1">
+    </div>
+    <div class="row border mt-1">
       <div class="col-sm-12 border py-3">
-      <div class="row">
-            <div class="col-sm-5">
+        <div class="row">
+          <div class="col-sm-5">
             <h6><strong>Access type:</strong></h6>
           </div>
           <div class="col-sm-7">
             <input class="form-control bg-white" type="text" name="newname" value="New Acess" readonly>
           </div>
-          </div>
-          </div>
+        </div>
       </div>
-      <!-- second row end here -->
-      <!-- third row start here -->
-<div class="row color rounded bg-info text-white mt-2">
+    </div>
+    <!-- starts of the ir71 div tag-->
+    <div class="row color rounded bg-info text-white mt-2">
       <h5>IR 71 Form</h5>
     </div>
-        <div class="row border bg-white mt-1">
-          <div class="col-sm-6 border py-3">
-            <h6><strong>Employee ID:</strong></h6>
-            <!-- <div class="col-sm-8"> -->
-            <input class="form-control" type="text" name="designation" value={{empp.employeeID}} ngModel readonly="true">
-          <!-- </div> -->
-          </div>
-          <div class="col-sm-6 border py-3">
-         
-              
-             <h6><strong>Employee Type:</strong></h6>
-              <input class="form-control" type="text" name="designation" value={{empp.empType}} ngModel readonly="true">
-            
-        
-        </div>
-        </div>
-    <!--First Row ends here-->
-    <!--Second Row starts here-->
+    <!-- end of the ir71 div tag -->
+    <!-- start of the first block of ir71 components containing employeeid and employeetype -->
+    <div class="row border bg-white mt-1">
+      <div class="col-sm-6 border py-3">
+        <h6><strong>Employee ID:</strong></h6>
+        <input class="form-control" type="text" name="designation" value={{empp.employeeID}} ngModel readonly="true">
+      </div>
+      <div class="col-sm-6 border py-3">
+        <h6><strong>Employee Type:</strong></h6>
+        <input class="form-control" type="text" name="designation" value={{empp.empType}} ngModel readonly="true">
+      </div>
+    </div>
+    <!-- end of the first block of components containing employeeid and employeetype -->
+    <!-- start of the second block of components containing name date of joining and designation -->
     <div class="row border bg-white mt-1">
       <div class="col-sm-4 border py-3">
         <div class="row">
@@ -106,8 +104,8 @@
         </div>
       </div>
     </div>
-    <!--Second Row ends here-->
-    <!--Third Row ends here-->
+    <!-- end of the second block of components containing name, date of joining and designation -->
+    <!-- start of the third block components containing project and ou department -->
     <div class="row border bg-white mt-1">
       <div class="col-sm-12 border py-3">
         <div class="row">
@@ -128,8 +126,8 @@
         </div>
       </div>
     </div>
-    <!--Third Row ends here-->
-    <!--Fourth Row starts here-->
+    <!-- end of the third block components containing project and ou department -->
+    <!-- start of the fourth block components containing project status and expiry date -->
     <div class="row border bg-white mt-1">
       <div class="col-sm-6 border py-3">
         <div class="row">
@@ -163,8 +161,8 @@
         </div>
       </div>
     </div>
-    <!--Fourth Row ends here-->
-    <!--Fifth Row starts here-->
+    <!-- end of the fourth block components containing project status and expiry date -->
+    <!-- start of the fifth block components containing project transfer details -->
     <div class="row border bg-white mt-1">
       <div class="col-sm-12 border py-3">
         <div class="row">
@@ -174,8 +172,6 @@
         </div>
       </div>
     </div>
-    <!--Fifth Row ends here-->
-    <!--Sixth Row starts here-->
     <div class="row border bg-white mt-1">
       <div class="col-sm-6 border py-3">
         <div class="row">
@@ -198,11 +194,11 @@
         </div>
       </div>
     </div>
-    <!--Sixth Row ends here-->
+    <!-- end of the fifth block components containing project transfer details -->
+    <!-- start of the sixth block components containing signatures and date -->
     <div class="row color rounded bg-info mt-2 text-white">
       <h5>Signatures</h5>
     </div>
-    <!--First Row starts here-->
     <div class="row border bg-white mt-1">
       <div class="col-sm-6 border py-3">
         <div class="row">
@@ -225,212 +221,212 @@
         </div>
       </div>
     </div>
-    <!--First Row ends here-->
- <div class="row color rounded mt-2 bg-info text-white">
-    <h5>Physical Access Requirements (To be filled by DH/PH/PM)</h5>
-  </div>
-  <!--First Row starts here-->
-  <div class="row border mt-1 bg-white">
-    <div class="col-sm-8 border py-3">
-      <div class="row">
-        <div class="col-sm-3">
-          <h6><strong>Zones:</strong></h6>
+    <!-- end of the sixth block components containing signatures and date -->
+    <!-- start of the physical access requirement containing zones and its details-->
+    <div class="row color rounded mt-2 bg-info text-white">
+      <h5>Physical Access Requirements (To be filled by DH/PH/PM)</h5>
+    </div>
+    <div class="row border mt-1 bg-white">
+      <div class="col-sm-8 border py-3">
+        <div class="row">
+          <div class="col-sm-3">
+            <h6><strong>Zones:</strong></h6>
+          </div>
+          <div class="col-sm-3">
+            <h6><input type="checkbox" [(ngModel)]="public" value="public" name="employee"> Public</h6>
+          </div>
+          <div class="col-sm-3">
+            <h6><input type="checkbox" [(ngModel)]="internal" value="internal" name="employee"> Internal</h6>
+          </div>
+          <div class="col-sm-3">
+            <h6><input type="checkbox" [(ngModel)]="restricted" value="restricted" name="employee"> Restricted</h6>
+          </div>
         </div>
-        <div class="col-sm-3">
-          <h6><input type="checkbox" [(ngModel)]="public" value="public" name="employee"> Public</h6>
-        </div>
-        <div class="col-sm-3">
-          <h6><input type="checkbox" [(ngModel)]="internal" value="internal" name="employee"> Internal</h6>
-        </div>
-        <div class="col-sm-3">
-          <h6><input type="checkbox" [(ngModel)]="restricted" value="restricted" name="employee"> Restricted</h6>
+        <div class="row mt-2">
+          <div class="col-sm-3 py-2">
+            <h6><strong>Details:</strong></h6>
+          </div>
+          <div class="col-sm-9">
+            <input class="form-control" type="text" name="employee">
+          </div>
         </div>
       </div>
-      <div class="row mt-2">
-        <div class="col-sm-3 py-2">
-          <h6><strong>Details:</strong></h6>
+      <div class="col-sm-4 border">
+        <div class="row border">
+          <div class="col-sm-12 py-3">
+            <label class="custom-control custom-radio">
+              <input id="radio5" name="accessType" type="radio" value="Temporary" class="custom-control-input" [(ngModel)]="accessType">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Temporary</span>
+            </label>
+          </div>
         </div>
-        <div class="col-sm-9">
-          <input class="form-control" type="text" name="employee">
+        <div class="row border">
+          <div class="col-sm-12 py-3">
+            <label class="custom-control custom-radio">
+              <input id="radio5" name="accessType" type="radio" value="Permanent" class="custom-control-input" [(ngModel)]="accessType">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Permanent</span>
+            </label>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-4 border">
-      <div class="row border">
-        <div class="col-sm-12 py-3">
-          <label class="custom-control custom-radio">
-                  <input id="radio5" name="accessType" type="radio" value="Temporary" class="custom-control-input" [(ngModel)]="accessType">
-                  <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Temporary</span>
-                </label>
-        </div>
-      </div>
-      <div class="row border">
-        <div class="col-sm-12 py-3">
-          <label class="custom-control custom-radio">
-                  <input id="radio5" name="accessType" type="radio" value="Permanent" class="custom-control-input" [(ngModel)]="accessType">
-                  <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Permanent</span>
-                </label>
-        </div>
-      </div>
+    <!-- end of the physical access requirement containing zones and its details-->
+    <!-- start of the access card details block  containing card no,issuid by and date-->
+    <div class="row color rounded mt-2 bg-info text-white">
+      <h5>Access Card Details (To be filled by CSO)</h5>
     </div>
-  </div>
-  <!--First Row ends here-->
-
-<div class="row color rounded mt-2 bg-info text-white">
-   <h5>Access Card Details (To be filled by CSO)</h5>
- </div>
- <!--First Row starts here-->
- <div class="row mt-1 border bg-white">
-   <div class="col-sm-12 border">
-     <div class="row">
-       <div class="col-sm-4 py-3">
-         <div class="row">
-           <div class="col-sm-12">
-             <h6><strong>Access Card Number</strong></h6>
-           </div>
-         </div>
-       </div>
-       <div class="col-sm-4 py-3">
-         <div class="row">
-           <div class="col-sm-12">
-             <h6><strong>Issued By</strong></h6>
-           </div>
-         </div>
-       </div>
-       <div class="col-sm-4 py-3">
-         <div class="row">
-           <div class="col-sm-12">
-             <h6><strong>Date</strong></h6>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-sm-4 py-3">
-         <div class="row">
-           <div class="col-sm-12">
-             <input type="text" class="form-control" name="" [(ngModel)]="accessCard">
-           </div>
-         </div>
-       </div>
-       <div class="col-sm-4 py-3">
-         <div class="row">
-           <div class="col-sm-12">
-             <input type="text" class="form-control" name="" [(ngModel)]="accessType">
-           </div>
-         </div>
-       </div>
-       <div class="col-sm-4 py-3">
-         <div class="row">
-           <div class="col-sm-12">
-             <input type="text" class="form-control bg-white" bsDatepicker [(ngModel)]="datepickerModel" readonly="true" />
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-
- <!--First Row ends here-->
-  <div class="row color rounded  bg-info mt-2 text-white">
-    <h5>Authorization Signatures (As Applicable)</h5>
-  </div>
-  <!--First Row starts here-->
-  <div class="row mt-1 border">
-    <div class="col-sm-12 border">
-      <div class="row">
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-3 py-2">
-              <h6><strong>HRO</strong></h6>
+    <div class="row mt-1 border bg-white">
+      <div class="col-sm-12 border">
+        <div class="row">
+          <div class="col-sm-4 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <h6><strong>Access Card Number</strong></h6>
+              </div>
             </div>
-            <div class="col-sm-9">
-              <input class="form-control" type="text" name="" readonly="true">
+          </div>
+          <div class="col-sm-4 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <h6><strong>Issued By</strong></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <h6><strong>Date</strong></h6>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-3 py-2">
-              <h6><strong>CSO</strong></h6>
-            </div>
-            <div class="col-sm-9">
-              <input class="form-control" type="text" name="">
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-5 py-2">
-              <h6><strong>DH/PH/PM</strong></h6>
-            </div>
-            <div class="col-sm-7">
-              <input class="form-control" type="text" name="" [(ngModel)]="sign" readonly="true">
+        <div class="row">
+          <div class="col-sm-4 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" name="" [(ngModel)]="accessCard">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-3 py-2">
-              <h6><strong>CISO</strong></h6>
-            </div>
-            <div class="col-sm-9">
-              <input class="form-control" type="text" name="" readonly="true">
+          <div class="col-sm-4 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" name="" [(ngModel)]="accessType">
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-12">
-              <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" readonly="true" />
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-12">
-              <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" [(ngModel)]="datepickerModel" readonly="true" />
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-12">
-              <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" readonly="true" />
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 py-3">
-          <div class="row">
-            <div class="col-sm-12">
-              <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" readonly="true" />
+          <div class="col-sm-4 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control bg-white" bsDatepicker [(ngModel)]="datepickerModel" readonly="true" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--First Row ends here-->
-    
-<div class="row justify-content-center mt-2 mb-3">
-
-
- <div class="col-sm-3">
-    <button class="btn btn-success form-control" (click)="accept(template1)">Accept</button>
-  </div>
-   <div class="col-sm-3">
-    <button class="btn btn-danger form-control" (click)="reject(template2)">Send Back</button>
-  </div>
-  </div>
-      <!-- third row end here -->
+    <!-- end of the access card details block  containing card no,issuid by and date-->
+    <!-- start of the authorized signatures details block  containing hr cso dh/ph/pn signatures with date-->
+    <div class="row color rounded  bg-info mt-2 text-white">
+      <h5>Authorization Signatures (As Applicable)</h5>
+    </div>
+    <div class="row mt-1 border">
+      <div class="col-sm-12 border">
+        <div class="row">
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-3 py-2">
+                <h6><strong>HRO</strong></h6>
+              </div>
+              <div class="col-sm-9">
+                <input class="form-control" type="text" name="" readonly="true">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-3 py-2">
+                <h6><strong>CSO</strong></h6>
+              </div>
+              <div class="col-sm-9">
+                <input class="form-control" type="text" name="">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-5 py-2">
+                <h6><strong>DH/PH/PM</strong></h6>
+              </div>
+              <div class="col-sm-7">
+                <input class="form-control" type="text" name="" [(ngModel)]="sign" readonly="true">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-3 py-2">
+                <h6><strong>CISO</strong></h6>
+              </div>
+              <div class="col-sm-9">
+                <input class="form-control" type="text" name="" readonly="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" readonly="true" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" [(ngModel)]="datepickerModel" readonly="true" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" readonly="true" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 py-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control bg-white" placement="top" placeholder="Date: __/ __/ ____" readonly="true" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <!-- end of the authorized signatures details block  containing hr cso dh/ph/pn signatures with date-->
+    <!-- starts of row containing buttons accept and send back -->
+    <div class="row justify-content-center mt-2 mb-3">
+      <div class="col-sm-3">
+        <!-- buttons to accept -->
+        <button class="btn btn-success form-control" (click)="accept(template1)">Accept</button>
       </div>
-
-                <template #template1>
+      <div class="col-sm-3">
+        <!-- buttons to reject -->
+        <button class="btn btn-danger form-control" (click)="reject(template2)">Send Back</button>
+      </div>
+    </div>
+    <!-- ends of row containing buttons accept and send back -->
+  </div>
+  <!-- end of the whole parent div containing whole form -->
+</div>
+<!-- end of the main div -->
+<!-- start of the alloted modal window  -->
+<template #template1>
   <div class="modal-header">
     <h4 class="modal-title">Message</h4>
     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
@@ -438,10 +434,11 @@
     </button>
   </div>
   <div class="modal-body">
-    <strong>Access Card alloted successfully</strong>  
+    <strong>Access Card alloted successfully</strong>
   </div>
 </template>
-
+<!-- end of the alloted modal window  -->
+<!-- start of the reject modal window  -->
 <template #template2>
   <div class="modal-header">
     <h4 class="modal-title">Message</h4>
@@ -450,10 +447,12 @@
     </button>
   </div>
   <div class="modal-body">
-    <strong>Do you really want to send it back to Hr?</strong> 
+    <strong>Do you really want to send it back to Hr?</strong>
   </div>
+  <!-- -->
   <div class="modal-footer">
-   <button class="btn btn-md btn-primary" (click)="backit()">Yes</button>
+    <button class="btn btn-md btn-primary" (click)="backit()">Yes</button>
     <button class="btn btn-md btn-danger" (click)="modalRef.hide()">No</button>
-    </div>
+  </div>
 </template>
+<!-- end of the reject modal window  -->
